@@ -5,7 +5,27 @@ var namespace = "http://www.w3.org/2000/svg"
 // You need to use at least 3 different types of shape.
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 function createFirstScene() {
-    
+makeCircle(120,40,10,"yellow",0.8)
+makeRect(117,50,7,50,"green",0.6)
+makeCircle(106,50,10,"red",0.8)
+makeCircle(103,35,10,"red",0.8)
+makeCircle(114,23,10,"red",0.8)
+makeCircle(130,27,10,"red",0.8)
+makeCircle(134,42,10,"red",0.8)
+makeCircle(122,54,10,"red",0.8)
+makeEllipse(70, 75, 15, 6,"black")
+makeCircle(60,65,10,"indigo",0.6)
+makeCircle(78,65,10,"indigo",0.6)
+makeCircle(60,60,10,"indigo",0.6)
+makeCircle(78,60,10,"indigo",0.6)
+makeCircle(40,20,10,"blue",0.2)
+makeCircle(60,20,10,"blue",0.2)
+makeCircle(50,10,10,"blue",0.2)
+makeCircle(50,24,10,"blue",0.2)
+makeCircle(100,10,10,"blue",0.2)
+makeCircle(85,10,10,"blue",0.2)
+makeCircle(90,20,10,"blue",0.2)
+makeText("Happy Spring", 60, 90, 15, "sans-serif", "blue", 0.8)
 }
 
 
@@ -13,7 +33,7 @@ function createFirstScene() {
 // You need to use at least 3 different types of shape.
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 function createSecondScene() {
-    
+
 }
 
 
