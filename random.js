@@ -4,7 +4,8 @@ var namespace = "http://www.w3.org/2000/svg"
 // Fill in this function so that it draws something using SVG shapes!
 // You need to use at least 3 different types of shape.
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
-function createFirstScene() {
+function createRandomScene() {
+makeRect(0,0,200,200,"white")
 makeCircle(120,40,10,"yellow",0.8)
 makeRect(117,50,7,50,"green",0.6)
 makeCircle(106,50,10,"red",0.8)
@@ -33,6 +34,7 @@ makeText("Happy Spring", 60, 90, 15, "sans-serif", "blue", 0.8)
 // You need to use at least 3 different types of shape.
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 function createSecondScene() {
+makeRect(0,0,200,200,"white")
 makeCircle(60,40,20,"black")
 makeCircle(40,25,10,"black")
 makeCircle(79,25,10,"black")
@@ -130,7 +132,14 @@ makeCircle(113,64,2,"black")
 // You need to use at least 3 different types of shape.
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 function createThirdScene() {
-    
+makeRect(0,0,200,200,"white")
+makeRect(20,30,35,70,"black",0.4)
+makeRect(27,68,20,30,"white",0.6)
+makeCircle(28,40,8,"white")
+makeCircle(43,40,8,"white")
+makeCircle(27,40,4,"black")
+makeCircle(41,40,4,"black")
+makePolygon("35,45 20,65 45,60", "orange", 0.8)
 }
 
 
@@ -141,18 +150,18 @@ function createThirdScene() {
 // This function is called whenever you press the "Go!" button.
 function createRandomScene() {
     // Generate a random number between 0 and 1, and store it in a variable.
-    
+    var myNumber = Math.random()
+    alert(myNumber)
     // If the number is less than 0.33, call the function to create your first scene.
-    
-    
-    
+    if(myNumber < 0.33){
+    createFirstScene();
+    }else if(myNumber < 0.67){
     // Else, if the number is less than 0.67, call the function to create your second scene.
-    
-    
-    
+    createSecondScene();
+    }else{
     // Else, call the function to create your third scene.
-    
-    
+    createThirdScene();
+    }
     
 }
 
