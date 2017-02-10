@@ -5,3 +5,13 @@
 h1 {
     text-align: center;
 }
+createFirstScene {
+background-color: orange;
+}
+createSecondScene {
+background-color: purple;
+}
+createThirdScene {
+background-color: lightblue;
+}
+

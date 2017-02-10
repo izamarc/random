@@ -4,7 +4,7 @@ var namespace = "http://www.w3.org/2000/svg"
 // Fill in this function so that it draws something using SVG shapes!
 // You need to use at least 3 different types of shape.
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
-function createRandomScene() {
+function createFirstScene() {
 makeRect(0,0,200,200,"white")
 makeCircle(120,40,10,"yellow",0.8)
 makeRect(117,50,7,50,"green",0.6)
@@ -27,7 +27,12 @@ makeCircle(100,10,10,"blue",0.2)
 makeCircle(85,10,10,"blue",0.2)
 makeCircle(90,20,10,"blue",0.2)
 makeText("Happy Spring", 60, 90, 15, "sans-serif", "blue", 0.8)
+var number = Math.random()
+if(number<0.3){
+makeCircle(150,10,8,"yellow")
+   }
 }
+
 
 
 // Fill in this function so that it draws something using SVG shapes!
@@ -125,6 +130,11 @@ makeCircle(109,72,2,"black")
 makeCircle(110,69,2,"black")
 makeCircle(111,66,2,"black")
 makeCircle(113,64,2,"black")
+var number = Math.random()
+if (number < 0.6){
+makeEllipse(60,50,6,3,"red")
+makeText("Love",55,20,30, "sans-serif", "red")
+    }
 }
 
 
@@ -140,6 +150,10 @@ makeCircle(43,40,8,"white")
 makeCircle(27,40,4,"black")
 makeCircle(41,40,4,"black")
 makePolygon("35,45 20,65 45,60", "orange", 0.8)
+var number = Math.random()
+if(number<0.3){
+makeText("Happy Penguin", 20, 20, 10, "sans-serif", "navy", 0.4)
+  }
 }
 
 
@@ -151,7 +165,6 @@ makePolygon("35,45 20,65 45,60", "orange", 0.8)
 function createRandomScene() {
     // Generate a random number between 0 and 1, and store it in a variable.
     var myNumber = Math.random()
-    alert(myNumber)
     // If the number is less than 0.33, call the function to create your first scene.
     if(myNumber < 0.33){
     createFirstScene();
